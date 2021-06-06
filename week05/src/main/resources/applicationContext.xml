@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--1、xml配置方式装配bean-->
+    <bean id="st1" class="com.javastudy.week05.entity.Student">
+    </bean>
+    <bean id="kl1" class="com.javastudy.week05.entity.Klass">
+    </bean>
+    <bean id="sc1" class="com.javastudy.week05.entity.School">
+    </bean>
+</beans>

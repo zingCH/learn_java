@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+
+#自定义参数
+#my-starter:
+#  para1: 222
+#  para2: 333
