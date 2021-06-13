@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a16be4c2-9f57-45e0-b62f-d91b35b405e5" name="Default Changelist" comment="week01" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/d_server/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\d_server\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sAWRCJYt5mq8gWp46T1oDUD2ej" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\a_java进阶学习训练营\geekuniversity\learn_java\src" />
+      <recent name="D:\a_java进阶学习训练营\geekuniversity\learn_java\src\com\week01" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MyClassLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.week01.MyClassLoader" />
+      <module name="learn_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.week01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyClassLoader" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a16be4c2-9f57-45e0-b62f-d91b35b405e5" name="Default Changelist" comment="" />
+      <created>1620315863861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620315863861</updated>
+      <workItem from="1620315867120" duration="1379000" />
+      <workItem from="1620572096593" duration="611000" />
+      <workItem from="1621172651705" duration="1449000" />
+    </task>
+    <task id="LOCAL-00001" summary="week01">
+      <created>1621172693473</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621172693473</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="week01" />
+    <option name="LAST_COMMIT_MESSAGE" value="week01" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="394" y="35" key="CommitChangelistDialog2" timestamp="1621172844751">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state x="394" y="35" key="CommitChangelistDialog2/0.0.1638.882@0.0.1638.882" timestamp="1621172844751" />
+    <state width="1596" height="222" key="GridCell.Tab.0.bottom" timestamp="1620317221421">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state width="1596" height="222" key="GridCell.Tab.0.bottom/0.0.1638.882@0.0.1638.882" timestamp="1620317221421" />
+    <state width="1596" height="222" key="GridCell.Tab.0.center" timestamp="1620317221421">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state width="1596" height="222" key="GridCell.Tab.0.center/0.0.1638.882@0.0.1638.882" timestamp="1620317221421" />
+    <state width="1596" height="222" key="GridCell.Tab.0.left" timestamp="1620317221421">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state width="1596" height="222" key="GridCell.Tab.0.left/0.0.1638.882@0.0.1638.882" timestamp="1620317221421" />
+    <state width="1596" height="222" key="GridCell.Tab.0.right" timestamp="1620317221421">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state width="1596" height="222" key="GridCell.Tab.0.right/0.0.1638.882@0.0.1638.882" timestamp="1620317221421" />
+    <state width="1596" height="275" key="GridCell.Tab.1.bottom" timestamp="1620317121203">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state width="1596" height="275" key="GridCell.Tab.1.bottom/0.0.1638.882@0.0.1638.882" timestamp="1620317121203" />
+    <state width="1596" height="275" key="GridCell.Tab.1.center" timestamp="1620317121203">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state width="1596" height="275" key="GridCell.Tab.1.center/0.0.1638.882@0.0.1638.882" timestamp="1620317121203" />
+    <state width="1596" height="275" key="GridCell.Tab.1.left" timestamp="1620317121203">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state width="1596" height="275" key="GridCell.Tab.1.left/0.0.1638.882@0.0.1638.882" timestamp="1620317121203" />
+    <state width="1596" height="275" key="GridCell.Tab.1.right" timestamp="1620317121203">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state width="1596" height="275" key="GridCell.Tab.1.right/0.0.1638.882@0.0.1638.882" timestamp="1620317121203" />
+    <state x="616" y="359" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621172849178">
+      <screen x="0" y="0" width="1638" height="882" />
+    </state>
+    <state x="616" y="359" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1638.882@0.0.1638.882" timestamp="1621172849178" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/week01/MyClassLoader.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/week01/MyClassLoader.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="ideajad">
+    <property name="annotate" value="false" />
+    <property name="annotateFully" value="false" />
+    <property name="braces" value="false" />
+    <property name="clear" value="false" />
+    <property name="confirmNavigationTriggeredDecompile" value="true" />
+    <property name="dead" value="true" />
+    <property name="defaultInitializers" value="false" />
+    <property name="dissassemblerOnly" value="false" />
+    <property name="fieldsFirst" value="true" />
+    <property name="fileExtension" value="java" />
+    <property name="fullyQualifiedNames" value="false" />
+    <property name="indentation" value="4" />
+    <property name="intRadix" value="10" />
+    <property name="lineNumbersAsComments" value="true" />
+    <property name="longRadix" value="10" />
+    <property name="maxStringLength" value="64" />
+    <property name="nocast" value="false" />
+    <property name="noclass" value="false" />
+    <property name="nocode" value="false" />
+    <property name="noconv" value="false" />
+    <property name="noctor" value="false" />
+    <property name="nodos" value="false" />
+    <property name="nofd" value="false" />
+    <property name="noinner" value="false" />
+    <property name="nolvt" value="false" />
+    <property name="nonlb" value="false" />
+    <property name="outputDirectory" value="" />
+    <property name="packFields" value="3" />
+    <property name="packImports" value="7" />
+    <property name="prefixNumericalClasses" value="_cls" />
+    <property name="prefixNumericalFields" value="_fld" />
+    <property name="prefixNumericalLocals" value="_lcl" />
+    <property name="prefixNumericalMethods" value="_mth" />
+    <property name="prefixNumericalParameters" value="_prm" />
+    <property name="prefixUnusedExceptions" value="_ex" />
+    <property name="readonly" value="false" />
+    <property name="safe" value="false" />
+    <property name="sort" value="false" />
+    <property name="spaceAfterKeyword" value="false" />
+    <property name="splitStringsAtNewline" value="false" />
+    <property name="useTabs" value="false" />
+  </component>
+</project>
