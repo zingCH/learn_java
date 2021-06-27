@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.GoodsMapper">
+
+    <resultMap id="baseResultMap" type="com.example.demo.domain.Goods">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="stock" jdbcType="BIGINT" property="stock"/>
+        <result column="price" jdbcType="DECIMAL" property="price"/>
+    </resultMap>
+
+    <sql id="baseColumnList">
+        name,stock,price
+    </sql>
+
+    <insert id="save" parameterType="com.example.demo.domain.Goods" useGeneratedKeys="true" keyProperty="id">
+        insert into t_goods
+        (<include refid="baseColumnList"/>)
+        values
+        ( #{goods.name}, #{goods.stock}, #{goods.price})
+    </insert>
+
+    <select id="selectById" resultMap="baseResultMap">
+        select * from t_goods where id = #{id}
+    </select>
+
+    <update id="reduceStock">
+        update t_goods set stock = stock - #{quantity} where id = #{id}
+    </update>
+
+</mapper>
