@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.OrderDao">
+
+    <select id="listByUid" resultType="com.example.demo.entity.Order">
+        SELECT id,user_id,`desc`
+        FROM `order`
+        where user_id = #{userId}
+    </select>
+
+    <select id="list" resultType="com.example.demo.entity.Order">
+        SELECT id,user_id,`desc`
+        FROM `order`
+    </select>
+
+    <select id="findByOrderIdAndUid" resultType="com.example.demo.entity.Order">
+        SELECT id,user_id,`desc`
+        FROM `order`
+        where
+        id = #{id}
+        and user_id = #{userId}
+        limit 1
+    </select>
+
+    <insert id="insertOrder" keyProperty="id" parameterType="com.example.demo.entity.Order">
+        INSERT INTO `order`(
+        user_id,`desc`
+        )
+        VALUES
+        (
+        #{userId},
+        #{desc})
+    </insert>
+
+    <update id="updateOrder" parameterType="com.example.demo.entity.Order">
+        UPDATE `order`
+        <set>
+            `desc`=#{desc}
+        </set>
+        WHERE id=#{id}
+        and user_id = #{userId}
+    </update>
+
+
+    <delete id="deleteByOrderId">
+        delete from `order` where id=#{orderId} and user_id = #{userId}
+    </delete>
+
+</mapper>
