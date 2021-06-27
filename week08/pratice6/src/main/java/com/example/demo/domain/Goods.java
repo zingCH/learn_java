@@ -5,10 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-/**
- * @author zhongjinhui
- */
-@Data
+
 public class Goods implements Serializable {
 
     private long id;
