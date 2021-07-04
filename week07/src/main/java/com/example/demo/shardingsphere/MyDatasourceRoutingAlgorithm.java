@@ -3,7 +3,8 @@
  * <b>包  名：</b>com.example.demo.shardingsphere<br/>
  * <b>文件名：</b>MyDatasourceRoutingAlgorithm.java<br/>
  * <b>日  期：</b>2021/06/20<br/>
- */
+ *//*
+
 package com.example.demo.shardingsphere;
 
 import lombok.extern.slf4j.Slf4j;
@@ -13,6 +14,7 @@ import org.apache.shardingsphere.api.sharding.hint.HintShardingValue;
 import java.util.Collection;
 import java.util.HashSet;
 
+*/
 /**
  * <b>类  名：</b>MyDatasourceRoutingAlgorithm<br/>
  * <b>类描述：</b><br/>
@@ -23,18 +25,23 @@ import java.util.HashSet;
  * <b>修改备注：</b><br/>
  *
  * @version 1.0.0 <br/>
- */
+ *//*
+
 @Slf4j
 public class MyDatasourceRoutingAlgorithm  implements HintShardingAlgorithm<String> {
 
-    /**
+    */
+/**
      * 用户数据源
-     */
+     *//*
+
     private static final String DS_USER = "ds1";
 
-    /**
+    */
+/**
      * 订单数据源
-     */
+     *//*
+
     private static final String DS_ORDER = "ds2";
 
     @Override
@@ -64,3 +71,4 @@ public class MyDatasourceRoutingAlgorithm  implements HintShardingAlgorithm<Stri
         return result;
     }
 }
+*/

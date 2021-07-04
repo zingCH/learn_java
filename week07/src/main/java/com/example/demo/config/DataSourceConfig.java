@@ -29,7 +29,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  *
  * @version 1.0.0 <br/>
  */
-@Profile("test")
+//@Profile("test")
 @Configuration
 @EnableTransactionManagement
 public class DataSourceConfig {

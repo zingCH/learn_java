@@ -26,7 +26,7 @@ import java.net.Socket;
 
 public class SocketServer {
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(8801);
+        ServerSocket serverSocket = new ServerSocket(8081);
         while (true){
             Socket socket = serverSocket.accept();
             doService(socket);

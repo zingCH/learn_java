@@ -3,17 +3,19 @@
  * <b>包  名：</b>com.example.demo.shardingsphere<br/>
  * <b>文件名：</b>DatasourceRoutingTest.java<br/>
  * <b>日  期：</b>2021/06/20<br/>
- */
+ *//*
+
 package com.example.demo.shardingsphere;
 
 import com.example.demo.dao.OrderDao;
 import com.example.demo.dao.UserDao;
 import com.example.demo.entity.OrderEntity;
-import org.apache.shardingsphere.api.hint.HintManager;
+//import org.apache.shardingsphere.api.hint.HintManager;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+*/
 /**
  * <b>类  名：</b>DatasourceRoutingTest<br/>
  * <b>类描述：</b><br/>
@@ -24,8 +26,9 @@ import org.springframework.boot.test.context.SpringBootTest;
  * <b>修改备注：</b><br/>
  *
  * @version 1.0.0 <br/>
- */
-@SpringBootTest
+ *//*
+
+//@SpringBootTest
 public class DatasourceRoutingTest {
 
     @Autowired
@@ -52,3 +55,4 @@ public class DatasourceRoutingTest {
     }
 
 }
+*/

@@ -44,7 +44,7 @@ public class OrderService {
     @DataSource(DbType.master)
     public void inset10w1(){
         orderDao.delete();
-        int i = 10_0000;
+        int i = 100_0000;
         StopWatch stopWatch = new StopWatch("insertOrder");
         stopWatch.start("insertOrder1");
         for (int i1 = 0; i1 < i; i1++) {
@@ -57,7 +57,7 @@ public class OrderService {
     @DataSource(DbType.master)
     public void inset10w2(){
         orderDao.delete();
-        int i = 10_0000;
+        int i = 100_0000;
         StopWatch stopWatch = new StopWatch("insertOrder");
         stopWatch.start("insertOrder2");
         List<OrderEntity> list = new ArrayList<>(i);
@@ -72,14 +72,14 @@ public class OrderService {
     @DataSource(DbType.master)
     public void inset10w3(){
         orderDao.delete();
-        int ii = 10_0000;
+        int ii = 100_0000;
         StopWatch stopWatch = new StopWatch("insertOrder");
         stopWatch.start("insertOrder3");
         List<OrderEntity> list = new ArrayList<>(ii);
         for (int i1 = 0; i1 < ii; i1++) {
             list.add(OrderEntity.create());
         }
-        int batchCount = 10000;
+        int batchCount = 100000;
         //每批最后一个的下标
         int batchLastIndex = batchCount;
         for (int i = 0; i < list.size(); ) {

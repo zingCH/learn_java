@@ -81,29 +81,22 @@ public class OkhttpOutboundHandler {
     }
 
     private void fetchGet(final FullHttpRequest inbound, final ChannelHandlerContext ctx, final String url) {
-        Request request = new Request.Builder().addHeader("mykey","myKey")
+        Request request = new Request.Builder()
                 .url(url)
                 .build();
-       httpclient.newCall(request).enqueue(new Callback() {
-           @Override
-           public void onFailure(@NotNull Call call, @NotNull IOException e) {
-
-           }
-
-           @Override
-           public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-                handleResponse(inbound,ctx,response);
-           }
-       });
+        try (Response response = httpclient.newCall(request).execute()){
+            handleResponse(inbound,ctx,response);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void handleResponse(final FullHttpRequest fullRequest, final ChannelHandlerContext ctx, final Response endpointResponse) {
         FullHttpResponse response = null;
         try {
-            String s = endpointResponse.body().toString();
             byte[] body = endpointResponse.body().toString().getBytes();
             response = new DefaultFullHttpResponse(HTTP_1_1, OK, Unpooled.wrappedBuffer(body));
-            response.headers().set("Content-Type", "application/json");
+            response.headers().set("Content-Type", "text/html");
             response.headers().setInt("Content-Length", Integer.parseInt(endpointResponse.header("Content-Length")));
             //过滤响应
             filter.filter(response);
