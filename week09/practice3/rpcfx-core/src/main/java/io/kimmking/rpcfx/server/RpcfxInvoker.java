@@ -25,37 +25,32 @@ public class RpcfxInvoker {
         String serviceClass = request.getServiceClass();
 
         // 作业1：改成泛型和反射
-        Object service = resolver.resolve(serviceClass);
+        Object service = resolver.resolve(serviceClass);//this.applicationContext.getBean(serviceClass);
 
         try {
-            Method method = service.getClass().getMethod(request.getMethod(),request.getParamTypes());
-            for(int i=0;i<request.getParamTypes().length;i++){
-                //类型不匹配，则进行类型转换
-                if (!request.getParamTypes()[i].isInstance(request.getParams()[i])) {
-                    Constructor constructor = request.getParamTypes()[0].getConstructor(String.class);
-                    request.getParams()[i] = constructor.newInstance(request.getParams()[i].toString());
-                }
-            }
-            Object result = method.invoke(service, request.getParams());
+            Method method = resolveMethodFromClass(service.getClass(), request.getMethod());
+            Object result = method.invoke(service, request.getParams()); // dubbo, fastjson,
             // 两次json序列化能否合并成一个
             response.setResult(JSON.toJSONString(result, SerializerFeature.WriteClassName));
             response.setStatus(true);
             return response;
-        } catch ( IllegalAccessException | InvocationTargetException | InstantiationException | NoSuchMethodException e) {
+        } catch ( IllegalAccessException | InvocationTargetException e) {
 
             // 3.Xstream
 
             // 2.封装一个统一的RpcfxException
+            RpcfxException rpcfxException = new RpcfxException("异常",e);
+            rpcfxException.setErrCode("500");
             // 客户端也需要判断异常
             e.printStackTrace();
-            response.setException(new RpcfxException("服务端invoke失败!",e));
+            response.setException(rpcfxException);
             response.setStatus(false);
             return response;
         }
     }
 
-//    private Method resolveMethodFromClass(Class<?> klass, String methodName) {
-//        return Arrays.stream(klass.getMethods()).filter(m -> methodName.equals(m.getName())).findFirst().get();
-//    }
+    private Method resolveMethodFromClass(Class<?> klass, String methodName) {
+        return Arrays.stream(klass.getMethods()).filter(m -> methodName.equals(m.getName())).findFirst().get();
+    }
 
 }
